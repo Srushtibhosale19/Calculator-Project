@@ -1,0 +1,44 @@
+// CALCULATOR
+
+#include<stdio.h>
+float num1,num2,result;
+char op,a,y;              //operator
+void main()
+{
+ printf("******* CALCULATOR *******\n");
+ printf(" Enter the first no.:");
+ scanf("%f",&num1);
+ printf(" Enter the second no.:");
+ scanf("%f",&num2);
+ printf(" Enter the operator (+,-,*,/,%,^):");
+ scanf(" %c",&op);
+
+  switch(op)
+  {
+    case '+':  //Addition
+    result=num1+num2;
+    printf("The result is %f+%f=%f",num1,num2,result);
+    break;
+
+    case '-':   //Subtration
+    result=num1-num2;
+    printf("The result is %f-%f=%f",num1,num2,result);
+    break;
+
+    case '*': //Multiplication
+    result=num1*num2;
+    printf("The result is %f*%f=%f",num1,num2,result);
+    break;
+
+    case '/':  //Division
+    result=num1/num2;
+    printf("The result is %f/%f=%f",num1,num2,result);
+    break;
+
+    default:  //Invalid
+        printf("Invalid operator");
+     }
+
+}
+
+
